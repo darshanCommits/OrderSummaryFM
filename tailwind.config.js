@@ -8,6 +8,7 @@ module.exports = {
       veryPaleBlue: "hsl(225, 100%, 98%)",
       desaturatedBlue: "hsl(224, 23%, 55%)",
       darkBlue: "hsl(223, 47%, 23%)",
+      white: "#fff"
     },
     extend: {
       fontFamily: {

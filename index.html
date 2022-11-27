@@ -21,25 +21,57 @@
 
     <title>Frontend Mentor | Order summary card</title>
   </head>
-  <body class="font-serif">
-    <div>
-      <img src="images/illustration-hero.svg" alt="illustration-mob" />
+  <body class="bg-paleBlue">
+    <img
+      class="bg-scroll w-fit absolute"
+      src="images/pattern-background-desktop.svg"
+      alt="pattern-background-mobile"
+    />
+    <div class="center h-screen relative">
+      <div
+        class="z-10 bg-white w-80 font-serif flex-col center rounded-2xl drop-shadow-2xl"
+      >
+        <img
+          class="w-80 rounded-t-2xl"
+          src="images/illustration-hero.svg"
+          alt="illustration-mob"
+        />
 
-      <h1 class="font-serif font-medium">Order Summary</h1>
+        <div>
+          <h1 class="text-2xl mb-5 mt-8 font-black text-darkBlue">
+            Order Summary
+          </h1>
 
-      <p>
-        You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!
-      </p>
+          <p class="w-80 px-6 text-desaturatedBlue">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
 
-      <div>
-        <img src="images/icon-music.svg" alt="music-svg" />
-        <h3>Annual Plan</h3>
-        $59.99/year Change
+        <div class="flex gap-9 mt-10 mb-8 bg-veryPaleBlue p-4 rounded-xl">
+          <img src="images/icon-music.svg" alt="music-svg" />
+          <div class="flex flex-col">
+            <h3 class="font-bold text-darkBlue">Annual Plan</h3>
+            <p class="text-desaturatedBlue">$59.99/year</p>
+          </div>
+          <h3
+            class="self-center justify-self-center text-brightBlue text-sm font-bold hover:text-desaturatedBlue cursor-pointer"
+          >
+            Change
+          </h3>
+        </div>
+
+        <button
+          class="bg-brightBlue font-black w-64 text-sm px-10 py-3 rounded-xl text-white drop-shadow-2xl shadow-current hover:bg-desaturatedBlue"
+        >
+          <p class="">Proceed to Payment</p>
+        </button>
+        <button
+          class="text-desaturatedBlue font-black text-sm w-64 my-5 hover:text-darkBlue"
+        >
+          Cancel Order
+        </button>
       </div>
-
-      <button>Proceed to Payment</button>
-      <button>Cancel Order</button>
     </div>
   </body>
 </html>
